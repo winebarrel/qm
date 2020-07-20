@@ -2,6 +2,8 @@
 
 [pt-fingerprint](https://www.percona.com/doc/percona-toolkit/LATEST/pt-fingerprint.html) for JSON Lines.
 
+[![Build Status](https://travis-ci.org/winebarrel/qm.svg?branch=master)](https://travis-ci.org/winebarrel/qm)
+
 ## Usage
 
 ```
