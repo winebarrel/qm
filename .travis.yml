@@ -2,4 +2,4 @@ language: go
 go:
   - 1.14.4
 script:
-  - make && ./jm -version
+  - make && ./qm -version
