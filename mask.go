@@ -31,12 +31,12 @@ func EachJsonLine(file io.Reader, queryKey string, fingerprintKey string, append
 		}
 
 		rawq, ok := jl[queryKey]
-		q := rawq.(string)
 
 		if !ok {
 			return fmt.Errorf("query not found: key=%s json=%s", queryKey, string(line))
 		}
 
+		q := rawq.(string)
 		fingerprint := query.Fingerprint(q)
 		jl[fingerprintKey] = fingerprint
 
