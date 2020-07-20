@@ -16,7 +16,7 @@ func main() {
 	flags := parseFlags()
 	defer func() { flags.File.Close() }()
 
-	err := qm.EachJsonLine(flags.File, flags.QueryKey, flags.FingerprintKey, func(jl map[string]interface{}) {
+	err := qm.EachJsonLine(flags.File, flags.QueryKey, flags.FingerprintKey, flags.SHA1, func(jl map[string]interface{}) {
 		line, err := jsoniter.ConfigFastest.MarshalToString(jl)
 
 		if err != nil {

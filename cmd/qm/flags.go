@@ -13,6 +13,7 @@ var version string
 type Flags struct {
 	QueryKey       string
 	FingerprintKey string
+	SHA1           bool
 	File           io.ReadCloser
 }
 
@@ -21,6 +22,7 @@ func parseFlags() (flags *Flags) {
 
 	flag.StringVar(&flags.QueryKey, "q", "query", "query key")
 	flag.StringVar(&flags.FingerprintKey, "f", "fingerprint", "fingerprint key")
+	flag.BoolVar(&flags.SHA1, "sha1", false, "append SHA1")
 	argVersion := flag.Bool("version", false, "print version and exit")
 	flag.Parse()
 
