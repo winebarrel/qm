@@ -1,0 +1,4 @@
+/qm
+*.jsonl
+*.gz
+*.sha1sum
