@@ -7,7 +7,7 @@
 ## Usage
 
 ```
-Usage of ./qm:
+Usage of qm:
   -f string
     	fingerprint key (default "fingerprint")
   -q string
